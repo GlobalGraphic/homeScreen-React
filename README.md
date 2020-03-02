@@ -1,4 +1,6 @@
-Alternative for google start page made with react
+Alternative for google start page made with React. Including current weather based on geolocation and custom search bar.
+
+https://homescreenalt.herokuapp.com/
 
 ## Available Scripts
 
