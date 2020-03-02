@@ -1,38 +1,103 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Oswald|Trade+Winds&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App:after {
+  content: "";
+  background: url("https://wallpaperplay.com/walls/full/f/f/1/122862.jpg");
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
+
+.container {
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container h1 {
+  font-size: 70px;
+  font-family: 'Oswald';
+  margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container h2 {
+  font-size: 40px;
+  font-family: 'Trade Winds';
+  margin-bottom: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container p {
+  font-size: 40px;
+  font-family: 'Oswald';
+  margin-bottom: 50px;
+  font-style: italic;
 }
 
-.App-link {
-  color: #61dafb;
+p.weather, i.fa-compass {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+i.fa-compass {
+  margin-right: 10px;
+}
+
+#search-form {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+#search-form input {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+}
+#search-form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 3rem;
+  text-align: center;
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: #333;
+}
+.info {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 1200px) {
+  #search-form { width: 50%; }
+}
+@media (max-width: 768px) {
+  .container { padding: 30px 35px; }
+  #search-form { width: 100%; }
+  .info { font-size: 0.5rem; }
 }
