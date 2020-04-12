@@ -1,6 +1,10 @@
 Alternative for google start page made with React. Including current weather based on geolocation and custom search bar.
 
+1. link -> herokuapp loads slower
 https://homescreenalt.herokuapp.com/
+
+2. link -> netlify loads faster
+https://zen-hodgkin-21197b.netlify.com/
 
 ## Available Scripts
 
